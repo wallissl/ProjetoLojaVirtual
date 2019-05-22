@@ -1,0 +1,2 @@
+# ProjetoLojaVirtual
+Ws - Loja
