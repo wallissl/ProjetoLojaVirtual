@@ -1,13 +1,18 @@
 <?php 
 
-$usuario = ["logado"=>false, "nome"=>"Wallis Silva","nivelAcesso" => 0];
-//$usuario = "";
+$usuario = ["logado"=>false, "nome"=>"Wallis Silva","nivelAcesso" => 1];
+//$usuario = "false";
 
 //Aula sobre o laço for envolvendo arrays.
 
 $produtos = [
+    
     "produto" =>["nome"=>"Curso Fullstack","descricao"=>"O curso fullstack ensina programação","preco"=> 1200, "img"=>"img/foto1.png"],
-    "produto2" =>["nome"=>"Curso Mobile","descricao"=>"O curso te ensina a criar apps","preco"=> 1300,"img"=>"img/foto2.png"]
+
+    "produto2" =>["nome"=>"Curso Mobile","descricao"=>"O curso te ensina a criar apps","preco"=> 1300,"img"=>"img/foto2.png"],
+    
+    "produto3" =>["nome"=>"Curso Mobile","descricao"=>"O curso te ensina a criar apps","preco"=> 1300,"img"=>"img/foto2.png"]    
+     
 ]; 
 
 $categorias = ["cursos", "Tutoriais", "Artigos", "Forum", "Codigos"];
