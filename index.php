@@ -4,7 +4,11 @@
 
 <!DOCTYPE html>
 <html lang="br">
-<?php include "head.php"; ?>
+<?php include "head.php"; 
+
+?>
+
+
 
 <body>
 
@@ -57,7 +61,8 @@
             </div>
 
             <div class="modal-body">
-                <form>  
+                <form method="POST" action="sucesso.php">  
+                    <input type="text" name="nomeProduto" value="<?php echo $produto["nome"]?>" hidden> 
                         <div class="form-group">
                             <input type="text" name="nomeCliente" placeholder="Nome completo">
                         </div>
@@ -79,19 +84,21 @@
                         </div>
 
 
-                </form>
+                
 
             ...
         </div>
-        <div class="modal-footer">
-            <div class="text-primary">Preço total: R$ <?php echo $produto["preco"]; ?></div>
+            <div class="modal-footer">
+                <div class="text-primary">Preço total: R$ <?php echo $produto["preco"]; ?></div>
 
-            <button type="button" class="btn btn-success">Finalizar Compra</button>
+                <button type="submit" class="btn btn-success">Finalizar Compra</button>
+            </div>
         </div>
-        </div>
+        </form>
     </div>
     </div>
 
+    
     <?php endforeach ?>
 
 
