@@ -29,7 +29,7 @@
                                 <h5 class="card-title"><?php echo $value["nome"]; ?> </h5>
                                 <p class="card-text"><?php echo $value["descricao"]; ?></p>
                                 <h4 class="text-success">R$<?php echo $value["preco"]; ?></h4>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo $chave; ?>">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo $produto['id']; ?>">
                                 Comprar
                                 </button>
 
@@ -50,7 +50,7 @@
 
         <?php foreach($produtos as $chave=>$produto): ?>
         <!-- Modal -->
-        <div class="modal fade" id="<?php echo $chave; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="<?php echo $produto['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
