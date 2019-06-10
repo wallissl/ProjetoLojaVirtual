@@ -7,6 +7,7 @@
 <body>
     <?php include_once "header.php"; ?>
     <?php include_once "header.php"; ?>
+
     <main class="container mt-5 ">
         <section class="row">
         <!-- Coluna para segurar card -->
