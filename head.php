@@ -1,6 +1,6 @@
 <?php
 include "funcoes.php";
-$usuario = logarUsuario("Wallis Silva", 1);
+$usuario = isset($_SESSION['usuario'])?$_SESSION['usuario']:"";
 //$usuario = "";
 $jsonProdutos = file_get_contents('Produtos.json');
 $produtos = json_decode($jsonProdutos, true);
